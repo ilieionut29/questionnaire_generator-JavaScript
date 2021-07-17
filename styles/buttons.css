@@ -1,0 +1,108 @@
+#addQuestion {
+  display: block;
+  width: 225px;
+  height: 60px;
+  border-radius: 50;
+  text-align: center;
+  background-color: var(--white-color);
+  font-family: var(--deep-color);
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  margin: 30px auto;
+  align-items: center;
+  border-radius: 20px;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+#addQuestion:hover {
+  letter-spacing: 2px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+  transition: all 0.4s ease 0s;
+}
+
+#continueButton1 {
+  padding: 12px 17px;
+  background-color: var(--white-color);
+  color: var(--deep-color);
+  border: none;
+  outline: none;
+  font-family: var(--main-font);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.6s ease 0s;
+  border-radius: 7px;
+  font-size: 0.9rem;
+}
+
+#continueButton2 {
+  padding: 12px 17px;
+  background-color: var(--white-color);
+  color: var(--deep-color);
+  border: none;
+  outline: none;
+  font-family: var(--main-font);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.6s ease 0s;
+  border-radius: 7px;
+}
+
+#uploadQuestion {
+  padding: 12px 17px;
+  background-color: var(--white-color);
+  color: var(--deep-color);
+  border: none;
+  outline: none;
+  font-family: var(--main-font);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.6s ease 0s;
+  border-radius: 7px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+}
+
+#generate {
+  padding: 12px 17px;
+  background-color: var(--white-color);
+  color: var(--deep-color);
+  border: none;
+  outline: none;
+  font-family: var(--main-font);
+  font-size: 1.05rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.6s ease 0s;
+  border-radius: 7px;
+  margin: 20px auto;
+  display: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.6s ease 0s;
+}
+
+.submit-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 12px 17px;
+  background-color: var(--white-color);
+  color: var(--deep-color);
+  border: none;
+  outline: none;
+  font-family: var(--main-font);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.6s ease 0s;
+  border-radius: 7px;
+}
+
+.submit-button:hover,
+#continueButton1:hover,
+#continueButton2:hover,
+#generate:hover,
+#uploadQuestion:hover {
+  letter-spacing: 1px;
+  text-decoration: underline;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+}

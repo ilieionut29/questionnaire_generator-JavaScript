@@ -1,0 +1,17 @@
+@media only screen and (max-width: 400px) {
+  .header img {
+    width: 100px;
+  }
+  .header-text {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .test {
+    font-size: 1rem;
+  }
+  .create-answer-x {
+    width: 285px;
+    margin-top: 7px;
+  }
+}

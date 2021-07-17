@@ -1,0 +1,265 @@
+/*  ----------------  IMPORT FONTS  ----------------  */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+/*  ----------------  ROOT  ----------------  */
+
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --white-color: #f5f6fa;
+  --deep-color: #130f40;
+  --blue-color: #40739e;
+  --gray-color: #7f8c8d;
+}
+
+/*  ----------------  RESET  ----------------  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--blue-color);
+}
+
+/*  ----------------  HEADER  ----------------  */
+
+.header {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.header-text {
+  font-family: var(--main-font);
+  color: var(--white-color);
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+  margin-top: 28px;
+  margin-left: 30px;
+}
+
+.test {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.test-text {
+  color: var(--white-color);
+  font-family: var(--main-font);
+}
+
+.test a {
+  color: #7ed6df;
+  font-family: var(--main-font);
+}
+
+.test a:hover {
+  text-decoration: underline;
+}
+
+/*  ----------------  QUESTION BOX  ----------------  */
+
+#questionBox {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.label-question {
+  color: var(--white-color);
+  font-family: var(--main-font);
+}
+
+.label-question input {
+  width: 300px;
+  height: 30px;
+  padding: 7px 10px;
+  margin-top: 6px;
+  margin-bottom: 30px;
+  background-color: var(--white-color);
+  color: var(--deep-color);
+  border: none;
+  outline: none;
+  font-family: var(--main-font);
+}
+
+.label-question input:focus {
+  outline: 3px solid var(--deep-color);
+}
+
+.label-question input:disabled {
+  color: var(--gray-color);
+}
+
+.answer-model {
+  color: var(--white-color);
+  font-family: var(--main-font);
+}
+
+#answerModel {
+  padding: 12px 17px;
+  background-color: var(--white-color);
+  color: var(--deep-color);
+  border: none;
+  width: 300px;
+  outline: none;
+  font-family: var(--main-font);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.6s ease 0s;
+  border-radius: 7px;
+  margin-top: 6px;
+  margin-bottom: 30px;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png)
+    no-repeat right var(--white-color);
+  background-size: 10px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-position-x: 277px;
+  font-size: 0.8em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.answer-span {
+  color: var(--white-color);
+  font-family: var(--main-font);
+}
+
+.answer-a,
+.answer-b,
+.answer-c {
+  width: 300px;
+  height: 30px;
+  padding: 7px 10px;
+  margin: 7px;
+  background-color: var(--white-color);
+  color: var(--deep-color);
+  border: none;
+  outline: none;
+  font-family: var(--main-font);
+}
+
+.answer-a:focus,
+.answer-b:focus,
+.answer-c:focus {
+  outline: 3px solid var(--deep-color);
+}
+
+.answer-a:disabled,
+.answer-b:disabled,
+.answer-c:disabled {
+  color: var(--gray-color);
+}
+
+.answer-c {
+  margin-bottom: 30px;
+}
+
+.date-design {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  width: 245px;
+  margin-top: 7px;
+}
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/*  ----------------  GENERATE BOX  ----------------  */
+
+#generateBox {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.create-answer {
+  color: var(--white-color);
+  font-family: var(--main-font);
+  font-size: 0.9rem;
+}
+
+.create-question {
+  color: var(--white-color);
+  font-family: var(--main-font);
+  font-size: 1.4rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  word-wrap: break-word;
+  width: 310px;
+}
+
+.create-answer-x {
+  color: var(--deep-color);
+  font-family: var(--main-font);
+  font-size: 1rem;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  display: inline-block;
+  margin-left: 7px;
+  text-align: left;
+  word-wrap: break-word;
+  width: 310px;
+}
+
+.model-answer-design {
+  width: 270px;
+  height: 25px;
+  padding: 5px 6px;
+  margin-top: 7px;
+  background-color: var(--white-color);
+  color: var(--deep-color);
+  border: none;
+  outline: none;
+  font-family: var(--main-font);
+}
+
+.model-answer-design:focus {
+ outline: 4px solid var(--deep-color);
+}
+
+/*  ----------------  CONGRATS BOX  ----------------  */
+
+.congrats {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.congrats-text {
+  color: var(--white-color);
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+}
+
+
+#output { 
+  text-align: center;
+  margin-top: 100px;
+}
